@@ -22,13 +22,11 @@ const openGift = () => {
 
         } else if (f) {
             if (target.classList.contains('overlay') || target.id === 'ok') {
-                fixedGift.style.zIndex = '5555';
                 gift.style.display = 'none';
                 f = false;
             } else {
                 target = target.closest('.close-form');
                 if (target.classList.contains('close-form')) {
-                    fixedGift.style.zIndex = '5555';
                     gift.style.display = 'none';
                     f = false;
                 }
