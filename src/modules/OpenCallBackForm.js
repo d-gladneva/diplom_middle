@@ -1,18 +1,19 @@
 const openCallBackForm = () => {
     let f = false;
-    const openPopup = document.querySelector('.open-popup');
     const callBackForm = document.getElementById('callback_form');
 
     document.addEventListener('click', (e) => {
         let target = e.target;
         console.log(target);
         if (!f) {
-            if (target.classList.contains('callback-btn')) {
-                callBackForm.style.display = 'block';
-                f = true;
+            if (target){
+                if (target.classList.contains('callback-btn')) {
+                    callBackForm.style.display = 'block';
+                    f = true;
+                }
             }
-        }
-        if (f) {
+
+        } else if (f) {
 
             if (target.classList.contains('overlay')) {
                 callBackForm.style.display = 'none';
@@ -25,7 +26,6 @@ const openCallBackForm = () => {
                 }
             }
         }
-
 
     });
 };

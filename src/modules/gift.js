@@ -1,4 +1,6 @@
+console.log(document.documentElement.clientWidth);
 const openGift = () => {
+
     let f = false;
     const gift = document.getElementById('gift');
     const fixedGift = document.querySelector('.fixed-gift');
@@ -8,17 +10,17 @@ const openGift = () => {
 
         console.log(target);
         if (!f) {
-            target = target.closest('.fixed-gift');
-            if (target.classList.contains('fixed-gift')) {
-
-                gift.style.display = 'block';
-                console.log(fixedGift);
-                fixedGift.style.zIndex = 'auto';
-                f = true;
+            if (target) {
+                target = target.closest('.fixed-gift');
+                if (target.classList.contains('fixed-gift')) {
+                    gift.style.display = 'block';
+                    console.log(fixedGift);
+                    fixedGift.style.zIndex = 'auto';
+                    f = true;
+                }
             }
-        }
-        if (f){
 
+        } else if (f) {
             if (target.classList.contains('overlay')) {
                 fixedGift.style.zIndex = '5555';
                 gift.style.display = 'none';
@@ -32,9 +34,8 @@ const openGift = () => {
                 }
             }
         }
-
-
     });
 };
+
 
 export default openGift;

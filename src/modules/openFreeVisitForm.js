@@ -7,12 +7,14 @@ const openFreeVisitForm = () => {
         let target = e.target;
         console.log(target);
         if (!f) {
-            if (target.classList.contains('open-popup')) {
-                freeVisitForm.style.display = 'block';
-                f = true;
+            if (target){
+                if (target.classList.contains('open-popup')) {
+                    freeVisitForm.style.display = 'block';
+                    f = true;
+                }
             }
-        }
-        if (f){
+
+        } else if (f){
 
             if (target.classList.contains('overlay')) {
                 freeVisitForm.style.display = 'none';
