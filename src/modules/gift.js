@@ -10,18 +10,18 @@ const openGift = () => {
 
         console.log(target);
         if (!f) {
-            if (target) {
-                target = target.closest('.fixed-gift');
-                if (target.classList.contains('fixed-gift')) {
-                    gift.style.display = 'block';
-                    console.log(fixedGift);
-                    fixedGift.style.zIndex = 'auto';
-                    f = true;
-                }
+            target = target.closest('.fixed-gift');
+
+                if (target) {
+
+                        gift.style.display = 'block';
+                        console.log(fixedGift);
+                        fixedGift.style.zIndex = 'auto';
+                        f = true;
             }
 
         } else if (f) {
-            if (target.classList.contains('overlay')) {
+            if (target.classList.contains('overlay') || target.id === 'ok') {
                 fixedGift.style.zIndex = '5555';
                 gift.style.display = 'none';
                 f = false;

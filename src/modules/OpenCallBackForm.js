@@ -15,7 +15,7 @@ const openCallBackForm = () => {
 
         } else if (f) {
 
-            if (target.classList.contains('overlay')) {
+            if (target.classList.contains('overlay') || target.classList.contains('close-btn')) {
                 callBackForm.style.display = 'none';
                 f = false;
             } else {
