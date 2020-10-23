@@ -13,6 +13,7 @@ const sendForm = () => {
     };
 
     const validForm = (elemWork) => {
+        console.log(elemWork);
         const formBtn = document.querySelectorAll('button[type="submit"]');
         console.log(formBtn);
 
@@ -67,7 +68,6 @@ const sendForm = () => {
             const inputPhone = elemWork.querySelector('input[name="phone"]');
             const inputName = elemWork.querySelector('input[name="name"]');
             const textMessage = elemWork.querySelector('textarea');
-
 
             if (inputPhone.value !== '' && inputName.value !== '') {
                 if (!textMessage || textMessage && textMessage.value !== '') {
@@ -144,6 +144,7 @@ const sendForm = () => {
         event.preventDefault();
         validForm(event.target);
         removePrompt(event.target);
+        sendAllForms(event.target);
     });
 
     document.body.addEventListener('submit', event => {
