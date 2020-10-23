@@ -11,12 +11,12 @@ const openGift = () => {
         if (!f) {
             target = target.closest('.fixed-gift');
 
-                if (target) {
+            if (target) {
 
-                        gift.style.display = 'block';
-                        console.log(fixedGift);
-                        fixedGift.style.zIndex = 'auto';
-                        f = true;
+                gift.style.display = 'block';
+                console.log(fixedGift);
+                fixedGift.style.display = 'none';
+                f = true;
             }
 
         } else if (f) {
