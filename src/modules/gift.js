@@ -1,4 +1,3 @@
-console.log(document.documentElement.clientWidth);
 const openGift = () => {
 
     let f = false;
