@@ -1,13 +1,14 @@
-const upArrow = () => {
-    const totop = document.getElementById('totop');
-    const clubs = document.getElementById('clubs');
+const arrow = () => {
+    const upArrow = () => {
+        const totop = document.getElementById('totop');
+        const clubs = document.getElementById('clubs');
 
-    console.log(clubs.getBoundingClientRect().y);
+        if (clubs.getBoundingClientRect().y <= 0) {
+            totop.style.opacity = '1';
+        } else totop.style.opacity = '0';
+    };
 
-    console.log(window.pageYOffset);
-    if (clubs.getBoundingClientRect().y <= 0){
-        totop.style.opacity = '1';
-    } else totop.style.opacity = '0';
+    window.addEventListener('scroll', upArrow);
 };
 
-export default upArrow;
+export default arrow;

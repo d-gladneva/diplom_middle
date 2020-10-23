@@ -4,7 +4,7 @@ import openCallBackForm from './modules/OpenCallBackForm';
 import openGift from './modules/gift';
 import sendForm from './modules/sendForm';
 import burger from './modules/burgerMenu';
-import upArrow from "./modules/upArrow";
+import arrow from "./modules/upArrow";
 import calc from "./modules/calc";
 
 openMenu();
@@ -13,5 +13,5 @@ openCallBackForm();
 openGift();
 sendForm();
 burger();
-upArrow();
+arrow();
 calc();
