@@ -4,13 +4,15 @@ const burger = () => {
     console.log(closeMenuLi);
     const closeMenuHref = closeMenuLi.querySelector('a');
     console.log(closeMenuHref);
-    const menuBtn = menuButton.querySelector('img');
+    const topMenu = document.querySelector('.top-menu');
     const closeMenuButton = document.querySelector('.close-menu-btn');
     const closeMenuBtn = closeMenuButton.querySelector('img');
     const openBurger = document.querySelector('.popup-menu');
     let f = false;
-    document.addEventListener('click', (e) => {
-        if (document.documentElement.clientWidth < 768) {
+    if (document.documentElement.clientWidth < 768) {
+        console.log(topMenu);
+        topMenu.style.position = 'fixed';
+        document.addEventListener('click', (e) => {
             let target = e.target;
             console.log(target);
             if (!f) {
@@ -30,8 +32,8 @@ const burger = () => {
                     }
                 }
             }
-        }
-    });
+        });
+    }
 
 
     // menuBtn.addEventListener('click', () => {
