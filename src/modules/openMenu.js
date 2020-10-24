@@ -11,8 +11,6 @@ const openMenu = () => {
             menuList.style.display = 'none';
             f = false;
         }
-
-
     });
 };
 

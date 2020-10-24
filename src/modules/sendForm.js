@@ -67,10 +67,11 @@ const sendForm = () => {
             const inputFormElems = elemWork.querySelectorAll('input');
             const inputPhone = elemWork.querySelector('input[name="phone"]');
             const inputName = elemWork.querySelector('input[name="name"]');
-            const textMessage = elemWork.querySelector('textarea');
+            const check = elemWork.querySelector('#check');
+            const thanks = elemWork.querySelector('#thanks');
 
             if (inputPhone.value !== '' && inputName.value !== '') {
-                if (!textMessage || textMessage && textMessage.value !== '') {
+                if (!check || check && check.checked) {
                     elemWork.appendChild(statusMessage);
                     statusMessage.textContent = loadMessage;
                     const formData = new FormData(elemWork);
@@ -85,8 +86,8 @@ const sendForm = () => {
                                 throw new Error('status network not 200');
                             }
                             statusMessage.textContent = succesMessage;
-                            if (textMessage) {
-                                textMessage.value = '';
+                            if (check) {
+                                check.checked = false;
                             }
                             for (let i = 0; i < inputFormElems.length; i++) {
                                 inputFormElems[i].value = '';
@@ -98,18 +99,19 @@ const sendForm = () => {
 
                         })
                         .catch((error) => {
+                            thanks.style.display = 'block';
                             statusMessage.textContent = errorMessage;
                             console.log(error);
                         });
-                } else if (textMessage && textMessage.value === '') {
+                } else if (check && check.checked === false) {
                     const errorDiv = document.createElement('div');
                     errorDiv.textContent = 'Заполните поле!';
                     errorDiv.style.cssText = 'color: red; line-height: 0px; height: 15px; font-size: 15px;';
-                    if (textMessage.nextElementSibling && textMessage.nextElementSibling.textContent === 'Заполните поле!') {
+                    if (check.nextElementSibling && check.nextElementSibling.textContent === 'Заполните поле!') {
                         return;
                     }
-                    if (textMessage.value === '') {
-                        textMessage.insertAdjacentElement('afterend', errorDiv);
+                    if (check.checked === false) {
+                        check.insertAdjacentElement('afterend', errorDiv);
                     }
                 }
 

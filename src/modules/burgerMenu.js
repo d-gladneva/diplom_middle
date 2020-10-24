@@ -8,15 +8,16 @@ const burger = () => {
     const openBurger = document.querySelector('.popup-menu');
     let f = false;
     if (document.documentElement.clientWidth < 768) {
-
+        topMenu.style.position = 'fixed';
         document.addEventListener('click', (e) => {
-            topMenu.style.position = 'fixed';
             let target = e.target;
             if (!f) {
                 target = target.closest('.menu-button');
-                if (target) {
-                    openBurger.style.display = 'block';
-                    f = true;
+                if (target){
+                    if (target.classList.contains('menu-button')) {
+                        openBurger.style.display = 'block';
+                        f = true;
+                    }
                 }
             } else if (f) {
                 if (target === closeMenuBtn) {
