@@ -6,6 +6,7 @@ import sendForm from './modules/sendForm';
 import burger from './modules/burgerMenu';
 import arrow from "./modules/upArrow";
 import calc from "./modules/calc";
+import openThanks from "./modules/openThanks";
 
 openMenu();
 openFreeVisitForm();
@@ -15,3 +16,4 @@ sendForm();
 burger();
 arrow();
 calc();
+openThanks();

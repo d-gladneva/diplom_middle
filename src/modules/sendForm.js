@@ -61,6 +61,8 @@ const sendForm = () => {
         }
     };
 
+
+
     const sendAllForms = (elemWork, e) => {
         console.dir(elemWork);
         if (elemWork.localName === 'form') {
@@ -69,19 +71,18 @@ const sendForm = () => {
             const inputName = elemWork.querySelector('input[name="name"]');
             const check = elemWork.querySelector('#check');
             const thanks = document.querySelector('#thanks');
-
-            const closeForm = document.querySelector('.close-form');
+            const content = thanks.querySelector('p');
+            console.log(content);
 
             if (inputPhone.value !== '' && inputName.value !== '') {
                 if (!check || check && check.checked) {
+                    console.log(check.checked);
                     elemWork.appendChild(statusMessage);
-                    statusMessage.textContent = loadMessage;
-                    thanks.style.display = 'block';
+                    content.textContent = loadMessage;
+
                     let target = e.target;
                     console.log(target);
-                    if (target === closeForm){
-                        thanks.style.display = 'none';
-                    }
+
                     const formData = new FormData(elemWork);
                     let body = {};
                     formData.forEach((val, key) => {
@@ -93,7 +94,7 @@ const sendForm = () => {
                             if (response.ok !== true) {
                                 throw new Error('status network not 200');
                             }
-                            statusMessage.textContent = succesMessage;
+                            content.textContent = succesMessage;
                             if (check) {
                                 check.checked = false;
                             }
@@ -107,15 +108,15 @@ const sendForm = () => {
 
                         })
                         .catch((error) => {
-
-                            statusMessage.textContent = errorMessage;
+                            content.textContent = errorMessage;
                             console.log(error);
                         });
                 } else if (check && check.checked === false) {
+                    console.log(check.checked);
                     const errorDiv = document.createElement('div');
-                    errorDiv.textContent = 'Заполните поле!';
+                    errorDiv.textContent = 'Поставьте галочку!';
                     errorDiv.style.cssText = 'color: red; line-height: 0px; height: 15px; font-size: 15px;';
-                    if (check.nextElementSibling && check.nextElementSibling.textContent === 'Заполните поле!') {
+                    if (check.nextElementSibling && check.nextElementSibling.textContent === 'Поставьте галочку!') {
                         return;
                     }
                     if (check.checked === false) {
@@ -161,6 +162,8 @@ const sendForm = () => {
         event.preventDefault();
         sendAllForms(event.target);
     });
+
+
 };
 
 export default sendForm;
