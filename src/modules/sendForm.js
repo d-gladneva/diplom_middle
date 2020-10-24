@@ -61,19 +61,27 @@ const sendForm = () => {
         }
     };
 
-    const sendAllForms = (elemWork) => {
+    const sendAllForms = (elemWork, e) => {
         console.dir(elemWork);
         if (elemWork.localName === 'form') {
             const inputFormElems = elemWork.querySelectorAll('input');
             const inputPhone = elemWork.querySelector('input[name="phone"]');
             const inputName = elemWork.querySelector('input[name="name"]');
             const check = elemWork.querySelector('#check');
-            const thanks = elemWork.querySelector('#thanks');
+            const thanks = document.querySelector('#thanks');
+
+            const closeForm = document.querySelector('.close-form');
 
             if (inputPhone.value !== '' && inputName.value !== '') {
                 if (!check || check && check.checked) {
                     elemWork.appendChild(statusMessage);
                     statusMessage.textContent = loadMessage;
+                    thanks.style.display = 'block';
+                    let target = e.target;
+                    console.log(target);
+                    if (target === closeForm){
+                        thanks.style.display = 'none';
+                    }
                     const formData = new FormData(elemWork);
                     let body = {};
                     formData.forEach((val, key) => {
@@ -99,7 +107,7 @@ const sendForm = () => {
 
                         })
                         .catch((error) => {
-                            thanks.style.display = 'block';
+
                             statusMessage.textContent = errorMessage;
                             console.log(error);
                         });
