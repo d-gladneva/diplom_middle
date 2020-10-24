@@ -1,4 +1,3 @@
-console.log(document.documentElement.clientWidth);
 const openGift = () => {
 
     let f = false;
@@ -11,13 +10,11 @@ const openGift = () => {
         console.log(target);
         if (!f) {
             target = target.closest('.fixed-gift');
-
-                if (target) {
-
-                        gift.style.display = 'block';
-                        console.log(fixedGift);
-                        fixedGift.style.zIndex = 'auto';
-                        f = true;
+            if (target) {
+                gift.style.display = 'block';
+                console.log(fixedGift);
+                fixedGift.style.display = 'none';
+                f = true;
             }
 
         } else if (f) {
