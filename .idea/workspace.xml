@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a569ac2d-ba7d-460c-8b4a-cedf7cb26e01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modules/gallerySlider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/uslugiCarusel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/burgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/burgerMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/calc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/sendForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/sendForm.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+            <state relative-caret-position="274">
+              <caret line="316" column="26" lean-forward="true" selection-start-line="316" selection-start-column="26" selection-end-line="316" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -32,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="81">
               <caret column="5227" selection-start-column="5227" selection-end-column="5227" />
             </state>
           </provider>
@@ -50,8 +46,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/sendForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="106" column="37" lean-forward="true" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+            <state relative-caret-position="67">
+              <caret line="82" column="37" lean-forward="true" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/modules/calc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+              <folding>
+                <marker date="1603574948190" expanded="true" signature="1119:1706" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/modules/gallerySlider.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -95,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/burgerMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="207">
+              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -116,6 +124,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>fixed</find>
+      <find>checked</find>
+      <find>body</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,19 +142,19 @@
         <option value="$PROJECT_DIR$/src/modules/module1.js" />
         <option value="$PROJECT_DIR$/src/modules/openPopup.js" />
         <option value="$PROJECT_DIR$/src/modules/OpenCallBackForm.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/modules/calc.js" />
         <option value="$PROJECT_DIR$/src/modules/gift.js" />
         <option value="$PROJECT_DIR$/src/modules/openMenu.js" />
         <option value="$PROJECT_DIR$/src/modules/openFreeVisitForm.js" />
         <option value="$PROJECT_DIR$/src/modules/upArrow.js" />
         <option value="$PROJECT_DIR$/src/modules/openThanks.js" />
-        <option value="$PROJECT_DIR$/src/modules/sendForm.js" />
         <option value="$PROJECT_DIR$/src/modules/slider.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/modules/uslugiCarusel.js" />
-        <option value="$PROJECT_DIR$/src/modules/gallerySlider.js" />
         <option value="$PROJECT_DIR$/src/modules/burgerMenu.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/modules/gallerySlider.js" />
+        <option value="$PROJECT_DIR$/src/modules/sendForm.js" />
+        <option value="$PROJECT_DIR$/src/modules/calc.js" />
       </list>
     </option>
   </component>
@@ -235,12 +245,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71666000" />
+    <option name="totallyTimeSpent" value="79094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1277" height="686" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25241935" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25241935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -252,7 +263,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.44223827" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.054151624" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -295,20 +306,6 @@
     <entry file="file://$PROJECT_DIR$/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/calc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/OpenCallBackForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -325,7 +322,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="81">
           <caret column="5227" selection-start-column="5227" selection-end-column="5227" />
         </state>
       </provider>
@@ -348,13 +345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/sendForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="106" column="37" lean-forward="true" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -382,13 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/gallerySlider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/upArrow.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -398,8 +381,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/burgerMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="207">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="316" column="26" lean-forward="true" selection-start-line="316" selection-start-column="26" selection-end-line="316" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/gallerySlider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sendForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="82" column="37" lean-forward="true" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/calc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding>
+            <marker date="1603574948190" expanded="true" signature="1119:1706" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

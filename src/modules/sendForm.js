@@ -76,7 +76,6 @@ const sendForm = () => {
 
             if (inputPhone.value !== '' && inputName.value !== '') {
                 if (!check || check && check.checked) {
-                    console.log(check.checked);
                     elemWork.appendChild(statusMessage);
                     content.textContent = loadMessage;
 
@@ -155,7 +154,6 @@ const sendForm = () => {
         event.preventDefault();
         validForm(event.target);
         removePrompt(event.target);
-        sendAllForms(event.target);
     });
 
     document.body.addEventListener('submit', event => {
