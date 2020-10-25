@@ -6,7 +6,9 @@ const slider = () => {
 
     let currentSlide = 0;
 
+
     const autoPlaySlide = () => {
+
         slide[currentSlide].style.display='none';
         currentSlide++;
         if (currentSlide >= slide.length){
