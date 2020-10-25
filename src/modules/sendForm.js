@@ -52,7 +52,11 @@ const sendForm = () => {
             }
         }
 
-        if (elemWork.name === 'name') {
+        if (elemWork.id === 'promocode') {
+            elemWork.value = elemWork.value.replace(/[^+0-9а-яА-Я]/g, '');
+        }
+
+        if (elemWork.name === 'name'&&elemWork.id !== 'promocode') {
             elemWork.value = elemWork.value.replace(/[^а-яё\s]/ig, '');
         }
 

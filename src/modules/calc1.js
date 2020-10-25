@@ -4,7 +4,7 @@ const calc1 = () => {
   const promocodeInput = document.getElementById('promocode');
   const priceTotal = document.getElementById('price-total');
   let clubActive;
-  const PROMO = 'лето';
+  const PROMO = 'ТЕЛО2019';
   const promoSale = 0.3;
   const clubsData = {
     mozaika: 'moz',
