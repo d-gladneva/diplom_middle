@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="2204" lean-forward="true" selection-start-line="2204" selection-end-line="2204" />
+            <state relative-caret-position="128">
+              <caret line="1137" selection-start-line="1137" selection-end-line="1137" />
             </state>
           </provider>
         </entry>
@@ -107,7 +107,6 @@
       <find>main-slider</find>
       <find>max-height: 541px</find>
       <find>cards</find>
-      <find>max-height: 541px;</find>
       <find>slider-dots</find>
       <find>arr</find>
       <find>dot</find>
@@ -119,6 +118,7 @@
       <find>phone</find>
       <find>body</find>
       <find>medi</find>
+      <find>max-height: 541px;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -248,11 +248,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109304000" />
+    <option name="totallyTimeSpent" value="109550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16613673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -266,8 +265,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49920508" visible="true" weight="0.1758437" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007949" side_tool="true" visible="true" weight="0.1758437" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49761525" visible="true" weight="0.3463588" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5023847" side_tool="true" visible="true" weight="0.3463588" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -485,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="2204" lean-forward="true" selection-start-line="2204" selection-end-line="2204" />
+        <state relative-caret-position="128">
+          <caret line="1137" selection-start-line="1137" selection-end-line="1137" />
         </state>
       </provider>
     </entry>
