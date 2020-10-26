@@ -22,4 +22,4 @@ calc1();
 openThanks();
 slider();
 sliderServices();
-// sliderGallery();
+sliderGallery();
