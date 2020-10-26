@@ -1431,10 +1431,10 @@ nav.popup-menu .close-menu-btn img {
   text-align: center;
   padding-top: 11px;
 }
-#gallery .gallery-slider .slider-arrow.prev {
+#gallery .gallery-slider .slider-arrow .prev {
   left: 0;
 }
-#gallery .gallery-slider .slider-arrow.next {
+#gallery .gallery-slider .slider-arrow .next {
   right: 0;
 }
 #gallery .gallery-slider .slider-dots {

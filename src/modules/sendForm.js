@@ -53,7 +53,7 @@ const sendForm = () => {
         }
 
         if (elemWork.id === 'promocode') {
-            elemWork.value = elemWork.value.replace(/[^+0-9а-яА-Я]/g, '');
+            elemWork.value = elemWork.value.replace(/[^+0-9а-яА-Яa-zA-z]/g, '');
         }
 
         if (elemWork.name === 'name'&&elemWork.id !== 'promocode') {
