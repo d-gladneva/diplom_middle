@@ -4,18 +4,19 @@ const openCallBackForm = () => {
 
     document.addEventListener('click', (e) => {
         let target = e.target;
-        console.log(target);
+        // console.log(target);
         if (!f) {
-            if (target){
+            if (target) {
                 if (target.classList.contains('callback-btn')) {
                     callBackForm.style.display = 'block';
                     f = true;
                 }
             }
-
         } else if (f) {
-
-            if (target.classList.contains('overlay') || target.classList.contains('close-btn')) {
+            if (
+                target.classList.contains('overlay') ||
+                target.classList.contains('close-btn')
+            ) {
                 callBackForm.style.display = 'none';
                 f = false;
             } else {
@@ -26,7 +27,6 @@ const openCallBackForm = () => {
                 }
             }
         }
-
     });
 };
 

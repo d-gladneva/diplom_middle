@@ -39,7 +39,6 @@ const sliderGallery = () => {
             this.autoPlay();
         },
         autoPlay() {
-            console.log('play');
             setInterval(() => {
                 this.nextSlide();
             }, 2000);

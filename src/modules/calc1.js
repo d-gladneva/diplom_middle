@@ -59,4 +59,3 @@ const calc1 = () => {
 };
 
 export default calc1;
-

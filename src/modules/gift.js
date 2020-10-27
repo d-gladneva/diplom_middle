@@ -1,5 +1,4 @@
 const openGift = () => {
-
     let f = false;
     const gift = document.getElementById('gift');
     const fixedGift = document.querySelector('.fixed-gift');
@@ -7,7 +6,7 @@ const openGift = () => {
     document.addEventListener('click', (e) => {
         let target = e.target;
 
-        console.log(target);
+        // console.log(target);
         if (!f) {
             target = target.closest('.fixed-gift');
             if (target) {
@@ -16,7 +15,6 @@ const openGift = () => {
                 fixedGift.style.display = 'none';
                 f = true;
             }
-
         } else if (f) {
             if (target.classList.contains('overlay') || target.id === 'ok') {
                 gift.style.display = 'none';
@@ -31,6 +29,5 @@ const openGift = () => {
         }
     });
 };
-
 
 export default openGift;

@@ -1,6 +1,6 @@
 const burger = () => {
     window.addEventListener('resize', () => {
-        console.log(document.documentElement.clientWidth);
+        // console.log(document.documentElement.clientWidth);
         const topMenu = document.querySelector('.top-menu');
         const closeMenuButton = document.querySelector('.close-menu-btn');
         const closeMenuBtn = closeMenuButton.querySelector('img');

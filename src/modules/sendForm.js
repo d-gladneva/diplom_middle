@@ -6,16 +6,47 @@ const sendForm = () => {
 
     statusMessage.style.cssText = 'font-size: 1.5 rem; color: #fff';
 
+    const thanks = document.querySelector('#thanks');
+    let f = false;
+
+    // const closeForm = document.querySelector('.close-form');
+    const openPopupThanks = () => {
+        thanks.style.display = 'block';
+        f = true;
+    };
+    const closePopupThanks = () => {
+        document.addEventListener('click', (e) => {
+            let target = e.target;
+            if (f) {
+                if (
+                    target.classList.contains('overlay') ||
+                    target.classList.contains('close-btn')
+                ) {
+                    thanks.style.display = 'none';
+                    f = false;
+                } else {
+                    target = target.closest('.close-form');
+                    if (target.classList.contains('close-form')) {
+                        thanks.style.display = 'none';
+                        f = false;
+                    }
+                }
+            }
+        });
+    };
     const removePrompt = (elemWork) => {
-        if (elemWork.nextElementSibling && elemWork.nextElementSibling.textContent === 'Заполните поле!') {
+        if (
+            elemWork.nextElementSibling &&
+            elemWork.nextElementSibling.textContent === 'Заполните поле!'
+        ) {
             elemWork.nextElementSibling.remove();
         }
     };
 
     const validForm = (elemWork) => {
-        console.log(elemWork);
+        // console.log(elemWork);
         const formBtn = document.querySelectorAll('button[type="submit"]');
-        console.log(formBtn);
+        // console.log(formBtn);
 
         const onBtn = () => {
             formBtn.forEach((item) => {
@@ -36,16 +67,21 @@ const sendForm = () => {
             elemWork.value = elemWork.value.replace(/[^+0-9]/g, '');
             let valid = checkPhone.test(elemWork.value);
             if (!valid) {
-
                 const errorDiv = document.createElement('div');
                 errorDiv.textContent = 'Ошибка в этом поле';
-                if (elemWork.nextElementSibling && elemWork.nextElementSibling.textContent === 'Ошибка в этом поле') {
+                if (
+                    elemWork.nextElementSibling &&
+                    elemWork.nextElementSibling.textContent === 'Ошибка в этом поле'
+                ) {
                     return;
                 }
                 elemWork.insertAdjacentElement('afterend', errorDiv);
                 offBtn();
             } else {
-                if (elemWork.parentNode.lastElementChild.textContent === 'Ошибка в этом поле') {
+                if (
+                    elemWork.parentNode.lastElementChild.textContent ===
+                    'Ошибка в этом поле'
+                ) {
                     elemWork.parentNode.lastElementChild.remove();
                 }
                 onBtn();
@@ -56,35 +92,35 @@ const sendForm = () => {
             elemWork.value = elemWork.value.replace(/[^+0-9а-яА-Яa-zA-z]/g, '');
         }
 
-        if (elemWork.name === 'name'&&elemWork.id !== 'promocode') {
-            elemWork.value = elemWork.value.replace(/[^а-яё\s]/ig, '');
+        if (elemWork.name === 'name' && elemWork.id !== 'promocode') {
+            elemWork.value = elemWork.value.replace(/[^а-яё\s]/gi, '');
         }
 
         if (elemWork.name === 'user_message') {
-            elemWork.value = elemWork.value.replace(/[^а-яА-Я ,.?!"';:\-\%()\#]/g, '');
+            elemWork.value = elemWork.value.replace(
+                /[^а-яА-Я ,.?!"';:\-\%()\#]/g,
+                ''
+            );
         }
     };
 
-
-
-    const sendAllForms = (elemWork, e) => {
-        console.dir(elemWork);
+    const sendAllForms = (elemWork) => {
         if (elemWork.localName === 'form') {
             const inputFormElems = elemWork.querySelectorAll('input');
             const inputPhone = elemWork.querySelector('input[name="phone"]');
             const inputName = elemWork.querySelector('input[name="name"]');
             const check = elemWork.querySelector('#check');
-            const thanks = document.querySelector('#thanks');
+            // const thanks = document.querySelector('#thanks');
             const content = thanks.querySelector('p');
-            console.log(content);
+            // console.log(content);
 
             if (inputPhone.value !== '' && inputName.value !== '') {
-                if (!check || check && check.checked) {
+                if (!check || (check && check.checked)) {
                     elemWork.appendChild(statusMessage);
                     content.textContent = loadMessage;
 
-                    let target = e.target;
-                    console.log(target);
+                    // let target = e.target;
+                    // console.log(target);
 
                     const formData = new FormData(elemWork);
                     let body = {};
@@ -94,6 +130,7 @@ const sendForm = () => {
 
                     postData(body)
                         .then((response) => {
+                            openPopupThanks();
                             if (response.ok !== true) {
                                 throw new Error('status network not 200');
                             }
@@ -108,31 +145,39 @@ const sendForm = () => {
                             setTimeout(() => {
                                 statusMessage.remove();
                             }, 5000);
-
                         })
                         .catch((error) => {
                             content.textContent = errorMessage;
                             console.log(error);
                         });
                 } else if (check && check.checked === false) {
-                    console.log(check.checked);
+                    // console.log(check.checked);
+                    console.log('error');
                     const errorDiv = document.createElement('div');
                     errorDiv.textContent = 'Поставьте галочку!';
-                    errorDiv.style.cssText = 'color: red; line-height: 0px; height: 15px; font-size: 15px;';
-                    if (check.nextElementSibling && check.nextElementSibling.textContent === 'Поставьте галочку!') {
+                    errorDiv.style.cssText =
+                        'color: red; line-height: 0px; height: 15px; font-size: 15px;';
+                    if (
+                        check.nextElementSibling &&
+                        check.nextElementSibling.textContent === 'Поставьте галочку!'
+                    ) {
                         return;
                     }
                     if (check.checked === false) {
                         check.insertAdjacentElement('afterend', errorDiv);
                     }
                 }
-
             } else {
                 for (let i = 0; i < inputFormElems.length; i++) {
                     const errorDiv = document.createElement('div');
                     errorDiv.textContent = 'Заполните поле!';
-                    errorDiv.style.cssText = 'color: red; line-height: 0px; height: 15px; font-size: 15px;';
-                    if (inputFormElems[i].nextElementSibling && inputFormElems[i].nextElementSibling.textContent === 'Заполните поле!') {
+                    errorDiv.style.cssText =
+                        'color: red; line-height: 0px; height: 15px; font-size: 15px;';
+                    if (
+                        inputFormElems[i].nextElementSibling &&
+                        inputFormElems[i].nextElementSibling.textContent ===
+                        'Заполните поле!'
+                    ) {
                         return;
                     }
                     if (inputFormElems[i].value === '') {
@@ -150,22 +195,21 @@ const sendForm = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(body)
+            body: JSON.stringify(body),
         });
     };
 
-    document.body.addEventListener('input', event => {
+    document.body.addEventListener('input', (event) => {
         event.preventDefault();
         validForm(event.target);
         removePrompt(event.target);
     });
 
-    document.body.addEventListener('submit', event => {
+    document.body.addEventListener('submit', (event) => {
         event.preventDefault();
         sendAllForms(event.target);
     });
-
-
+    closePopupThanks();
 };
 
 export default sendForm;
