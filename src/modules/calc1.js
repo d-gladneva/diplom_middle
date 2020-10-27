@@ -1,6 +1,8 @@
 const calc1 = () => {
   const cardsType = document.querySelectorAll('input[name="card-type"]');
-  const clubInputs = document.querySelectorAll('input[name="club-name"]');
+  card_order
+  const formCardOrder = document.getElementById('card_order');
+  const clubInputs = formCardOrder.querySelectorAll('input[name="club-name"]');
   const promocodeInput = document.getElementById('promocode');
   const priceTotal = document.getElementById('price-total');
   let clubActive;
