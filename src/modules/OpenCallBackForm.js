@@ -1,5 +1,6 @@
 const openCallBackForm = () => {
     let f = false;
+    const call = document.querySelector('#call');
     const callBackForm = document.getElementById('callback_form');
 
     document.addEventListener('click', (e) => {
@@ -7,7 +8,7 @@ const openCallBackForm = () => {
         // console.log(target);
         if (!f) {
             if (target) {
-                if (target.classList.contains('callback-btn')) {
+                if (target === call) {
                     callBackForm.style.display = 'block';
                     f = true;
                 }
