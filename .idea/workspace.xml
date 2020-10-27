@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mozaika.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="572" column="38" selection-start-line="572" selection-start-column="38" selection-end-line="572" selection-end-column="38" />
+            <state relative-caret-position="174">
+              <caret line="821" column="26" lean-forward="true" selection-start-line="821" selection-start-column="26" selection-end-line="821" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/schelkovo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="595" selection-start-line="595" selection-end-line="595" />
+            <state relative-caret-position="311">
+              <caret line="861" column="14" lean-forward="true" selection-start-line="861" selection-start-column="14" selection-end-line="861" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -256,12 +256,12 @@
       <updated>1603302795720</updated>
       <workItem from="1603302797503" duration="28159000" />
       <workItem from="1603449564256" duration="21427000" />
-      <workItem from="1603793176149" duration="10576000" />
+      <workItem from="1603793176149" duration="10821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122313000" />
+    <option name="totallyTimeSpent" value="122558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -278,7 +278,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49761525" visible="true" weight="0.6412078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49761525" visible="true" weight="0.24333926" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5023847" side_tool="true" weight="0.3463588" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -476,15 +476,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mozaika.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="572" column="38" selection-start-line="572" selection-start-column="38" selection-end-line="572" selection-end-column="38" />
+        <state relative-caret-position="174">
+          <caret line="821" column="26" lean-forward="true" selection-start-line="821" selection-start-column="26" selection-end-line="821" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/schelkovo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="595" selection-start-line="595" selection-end-line="595" />
+        <state relative-caret-position="311">
+          <caret line="861" column="14" lean-forward="true" selection-start-line="861" selection-start-column="14" selection-end-line="861" selection-end-column="14" />
         </state>
       </provider>
     </entry>
