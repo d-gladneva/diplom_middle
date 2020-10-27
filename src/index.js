@@ -15,7 +15,7 @@ if (
     window.location.pathname === '/index.html' ||
     window.location.pathname === '/'
 )
-    calc1();
+
 // maskPhone();
 openMenu();
 openFreeVisitForm();
@@ -28,3 +28,4 @@ arrow();
 slider();
 sliderServices();
 sliderGallery();
+calc1();
