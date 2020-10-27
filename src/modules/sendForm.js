@@ -114,7 +114,7 @@ const sendForm = () => {
             const content = thanks.querySelector('p');
             // console.log(content);
 
-            if (inputPhone.value !== '' && inputName.value !== '') {
+            if (inputPhone.value !== '' && inputName && inputName.value !== '') {
                 if (!check || (check && check.checked)) {
                     elemWork.appendChild(statusMessage);
                     content.textContent = loadMessage;

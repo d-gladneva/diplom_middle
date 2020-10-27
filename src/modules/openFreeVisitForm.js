@@ -19,7 +19,7 @@ const openFreeVisitForm = () => {
                 f = false;
             } else {
                 target = target.closest('.close-form');
-                if (target.classList.contains('close-form')) {
+                if (target&&target.classList.contains('close-form')) {
                     freeVisitForm.style.display = 'none';
                     f = false;
                 }
