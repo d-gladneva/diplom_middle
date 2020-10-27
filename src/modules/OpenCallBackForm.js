@@ -5,7 +5,6 @@ const openCallBackForm = () => {
 
     document.addEventListener('click', (e) => {
         let target = e.target;
-        // console.log(target);
         if (!f) {
             if (target) {
                 if (target === call) {

@@ -44,9 +44,7 @@ const sendForm = () => {
     };
 
     const validForm = (elemWork) => {
-        // console.log(elemWork);
         const formBtn = document.querySelectorAll('button[type="submit"]');
-        // console.log(formBtn);
 
         const onBtn = () => {
             formBtn.forEach((item) => {
@@ -105,22 +103,17 @@ const sendForm = () => {
     };
 
     const sendAllForms = (elemWork) => {
-        if (elemWork.localName === 'form') {
+         {
             const inputFormElems = elemWork.querySelectorAll('input');
             const inputPhone = elemWork.querySelector('input[name="phone"]');
             const inputName = elemWork.querySelector('input[name="name"]');
             const check = elemWork.querySelector('#check');
-            // const thanks = document.querySelector('#thanks');
             const content = thanks.querySelector('p');
-            // console.log(content);
 
-            if (inputPhone.value !== '' && inputName && inputName.value !== '') {
+            if (inputPhone.value !== '' || inputPhone.value !== '' && inputName && inputName.value !== '') {
                 if (!check || (check && check.checked)) {
                     elemWork.appendChild(statusMessage);
                     content.textContent = loadMessage;
-
-                    // let target = e.target;
-                    // console.log(target);
 
                     const formData = new FormData(elemWork);
                     let body = {};
@@ -151,7 +144,6 @@ const sendForm = () => {
                             console.log(error);
                         });
                 } else if (check && check.checked === false) {
-                    // console.log(check.checked);
                     console.log('error');
                     const errorDiv = document.createElement('div');
                     errorDiv.textContent = 'Поставьте галочку!';
