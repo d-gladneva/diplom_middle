@@ -110,7 +110,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 a {
@@ -158,13 +158,13 @@ pre {
   white-space: pre-line;
   word-wrap: break-word;
 }
-input[type="radio"] {
+input[type='radio'] {
   vertical-align: text-bottom;
 }
-input[type="checkbox"] {
+input[type='checkbox'] {
   vertical-align: bottom;
 }
-.ie7 input[type="checkbox"] {
+.ie7 input[type='checkbox'] {
   vertical-align: baseline;
 }
 .ie6 input {
@@ -209,9 +209,9 @@ samp {
 }
 .clickable,
 label,
-input[type="button"],
-input[type="submit"],
-input[type="file"],
+input[type='button'],
+input[type='submit'],
+input[type='file'],
 button {
   cursor: pointer;
 }
@@ -222,7 +222,7 @@ textarea {
   margin: 0;
 }
 button,
-input[type="button"] {
+input[type='button'] {
   width: auto;
   overflow: visible;
 }
@@ -231,7 +231,7 @@ input[type="button"] {
 }
 .clearfix:before,
 .clearfix:after {
-  content: "\0020";
+  content: '\0020';
   display: block;
   height: 0;
   overflow: hidden;
@@ -506,8 +506,8 @@ html#schelkovo #cards #card_order .cards-types {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-html#mozaika #cards #card_order input[type="radio"] + label,
-html#schelkovo #cards #card_order input[type="radio"] + label {
+html#mozaika #cards #card_order input[type='radio'] + label,
+html#schelkovo #cards #card_order input[type='radio'] + label {
   display: inline-block;
   width: 145px;
   height: 92px;
@@ -524,8 +524,8 @@ html#schelkovo #cards #card_order input[type="radio"] + label {
   text-align: center;
   cursor: pointer;
 }
-html#mozaika #cards #card_order input[type="radio"]:checked + label,
-html#schelkovo #cards #card_order input[type="radio"]:checked + label {
+html#mozaika #cards #card_order input[type='radio']:checked + label,
+html#schelkovo #cards #card_order input[type='radio']:checked + label {
   background-image: none;
   outline: 0;
   background-color: #ffd11a;
@@ -542,7 +542,7 @@ html#schelkovo #cards #card_order span.cost {
 }
 html#mozaika #cards #card_order span.rubl,
 html#schelkovo #cards #card_order span.rubl {
-  font-family: "ALS Rubl";
+  font-family: 'ALS Rubl';
   text-transform: none;
 }
 html#mozaika #cards #card_order span.frost,
@@ -608,6 +608,9 @@ html#schelkovo .advantages .wrapper {
   html#schelkovo .head-slider {
     height: 340px;
   }
+  .main-slider {
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 850px) {
   html#mozaika .advantages .wrapper,
@@ -662,8 +665,8 @@ html#schelkovo .advantages .wrapper {
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  html#mozaika #cards #card_order input[type="radio"] + label,
-  html#schelkovo #cards #card_order input[type="radio"] + label {
+  html#mozaika #cards #card_order input[type='radio'] + label,
+  html#schelkovo #cards #card_order input[type='radio'] + label {
     width: 30vw;
   }
 }
@@ -688,8 +691,8 @@ html#schelkovo .advantages .wrapper {
   html#schelkovo .about-club .right .list .text h6 {
     text-align: center;
   }
-  html#mozaika #cards #card_order input[type="radio"] + label,
-  html#schelkovo #cards #card_order input[type="radio"] + label {
+  html#mozaika #cards #card_order input[type='radio'] + label,
+  html#schelkovo #cards #card_order input[type='radio'] + label {
     width: 42vw;
   }
   html#mozaika #cards #card_order .form-bottom,
@@ -709,10 +712,10 @@ html#schelkovo .advantages .wrapper {
   }
 }
 @font-face {
-  font-family: "ALS Rubl";
+  font-family: 'ALS Rubl';
   font-style: normal;
   font-weight: 400;
-  src: local("ALS Rubl"), url(../fonts/rouble.woff) format("woff");
+  src: local('ALS Rubl'), url(../fonts/rouble.woff) format('woff');
 }
 .fixed-gift {
   position: fixed;
@@ -744,7 +747,7 @@ html#schelkovo .advantages .wrapper {
 }
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   max-width: 1920px;
 }
@@ -758,7 +761,7 @@ body {
   padding-right: 15px;
 }
 .btn {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   background-color: #ffd11a;
   color: #1e1c34;
   height: 45px;
@@ -786,7 +789,7 @@ h2 {
   margin-bottom: 52px;
 }
 h2:after {
-  content: "";
+  content: '';
   width: 87px;
   height: 2px;
   border: 1px solid #ffd11a;
@@ -966,11 +969,11 @@ header nav.top-menu {
   min-height: 50px;
   background-color: #000;
   background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#230a16),
-    to(#0c0b15)
+          linear,
+          left top,
+          right top,
+          from(#230a16),
+          to(#0c0b15)
   );
   background-image: linear-gradient(to right, #230a16 0%, #0c0b15 100%);
 }
@@ -1046,11 +1049,11 @@ nav.popup-menu {
   position: fixed;
   background-color: #000;
   background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#230a16),
-    to(#0c0b15)
+          linear,
+          left top,
+          right top,
+          from(#230a16),
+          to(#0c0b15)
   );
   background-image: linear-gradient(to right, #230a16 0%, #0c0b15 100%);
   height: 100vh;
@@ -1133,8 +1136,10 @@ nav.popup-menu .close-menu-btn img {
   z-index: 200;
 }
 .main-slider {
+  /* display: flex; */
   height: 100%;
   max-height: 541px;
+  /* margin: 0 auto; */
 }
 .main-slider .slide {
   position: relative;
@@ -1177,7 +1182,7 @@ nav.popup-menu .close-menu-btn img {
   text-transform: uppercase;
 }
 .main-slider .slide .slide-text .offer-head .bottom span {
-  font-family: "ALS Rubl";
+  font-family: 'ALS Rubl';
   text-transform: none;
 }
 .main-slider .slide .slide-text .validity {
@@ -1397,21 +1402,93 @@ nav.popup-menu .close-menu-btn img {
   background: url(../images/gallery-bg.png) left center no-repeat;
 }
 #gallery .gallery-wrapper {
-    max-width: 700px;
-    margin: auto;
-    overflow: hidden;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
 }
 
+/* Кнопки вперед и назад */
+#gallery .gallery-slider .prev,
+#gallery .gallery-slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+#gallery .gallery-slider .next {
+  right: -42px;
+  border-radius: 3px 0 0 3px;
+}
+#gallery .gallery-slider .prev {
+  left: -42px;
+  border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+#gallery .gallery-slider .prev:hover,
+#gallery .gallery-slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.gallery_slider-dots {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+.gallery-slider__dots-item {
+  cursor: pointer;
+  height: 4px;
+  width: 24px;
+  margin: 0 4px;
+  background-color: #ddd;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.gallery-slider__dots-item.active,
+.gallery-slider__dots-item:hover {
+  background-color: #ffd11a;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 #gallery .gallery-slider {
-    text-align: center;
-    display: flex;
+  text-align: center;
+  /* display: flex; */
+  position: relative;
+  max-width: 751px;
+  margin: 0 auto;
 }
 #gallery .gallery-slider .slide {
-    margin: 0 auto !important;
-    width: 100%;
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
+  margin: 0 auto !important;
+  width: 100%;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 #gallery .gallery-slider .slider-arrow {
   position: absolute;
@@ -1429,10 +1506,10 @@ nav.popup-menu .close-menu-btn img {
   text-align: center;
   padding-top: 11px;
 }
-#gallery .gallery-slider .slider-arrow.prev {
+#gallery .gallery-slider .slider-arrow .prev {
   left: 0;
 }
-#gallery .gallery-slider .slider-arrow.next {
+#gallery .gallery-slider .slider-arrow .next {
   right: 0;
 }
 #gallery .gallery-slider .slider-dots {
@@ -1466,7 +1543,7 @@ nav.popup-menu .close-menu-btn img {
   -ms-flex-align: center;
   align-items: center;
 }
-#card_order input[type="radio"] {
+#card_order input[type='radio'] {
   display: none;
 }
 #card_order .time {
@@ -1481,7 +1558,7 @@ nav.popup-menu .close-menu-btn img {
   -ms-flex-pack: center;
   justify-content: center;
 }
-#card_order .time input[type="radio"] + label {
+#card_order .time input[type='radio'] + label {
   display: inline-block;
   width: 120px;
   height: 45px;
@@ -1498,7 +1575,7 @@ nav.popup-menu .close-menu-btn img {
   text-align: center;
   cursor: pointer;
 }
-#card_order .time input[type="radio"]:checked + label {
+#card_order .time input[type='radio']:checked + label {
   background-image: none;
   outline: 0;
   background-color: #ffd11a;
@@ -1508,7 +1585,7 @@ nav.popup-menu .close-menu-btn img {
   padding-left: 30px;
   margin-top: 4px;
 }
-#card_order p.personal-data input[type="checkbox"] {
+#card_order p.personal-data input[type='checkbox'] {
   display: none;
 }
 #card_order p.personal-data label {
@@ -1518,8 +1595,8 @@ nav.popup-menu .close-menu-btn img {
   line-height: 22px;
   text-transform: uppercase;
 }
-#card_order p.personal-data input[type="checkbox"]:not(checked) + label:before {
-  content: "";
+#card_order p.personal-data input[type='checkbox']:not(checked) + label:before {
+  content: '';
   width: 21px;
   height: 21px;
   border: 1px solid #b7b7b7;
@@ -1529,7 +1606,7 @@ nav.popup-menu .close-menu-btn img {
   top: -3px;
   left: -29px;
 }
-#card_order p.personal-data input[type="checkbox"]:checked + label:before {
+#card_order p.personal-data input[type='checkbox']:checked + label:before {
   content: url(../images/checked.png);
   width: 21px;
   height: 21px;
@@ -1588,11 +1665,11 @@ nav.popup-menu .close-menu-btn img {
 .club label p {
   font-weight: 300;
 }
-.club input[type="radio"] {
+.club input[type='radio'] {
   display: none;
 }
-.club input[type="radio"]:not(checked) + label:before {
-  content: "";
+.club input[type='radio']:not(checked) + label:before {
+  content: '';
   width: 21px;
   height: 21px;
   border: 1px solid #b7b7b7;
@@ -1602,7 +1679,7 @@ nav.popup-menu .close-menu-btn img {
   top: 15px;
   left: -29px;
 }
-.club input[type="radio"]:checked + label:before {
+.club input[type='radio']:checked + label:before {
   content: url(../images/checked.png);
   width: 21px;
   height: 21px;
@@ -1664,7 +1741,7 @@ footer .footer-top .right {
   width: 50%;
 }
 footer .footer-top:after {
-  content: "";
+  content: '';
   background-color: #5d5c68;
   width: 100%;
   height: 1px;
@@ -1885,8 +1962,8 @@ footer .footer-bottom .right .socials .social-icon:hover a {
 .popup .form-content input::placeholder {
   color: #1e1c34;
 }
-.popup .form-content input[type="text"],
-.popup .form-content input[type="tel"] {
+.popup .form-content input[type='text'],
+.popup .form-content input[type='tel'] {
   width: 268px;
   padding: 5px;
   height: 45px;
@@ -1913,11 +1990,11 @@ p.personal-data label {
   margin: 0 auto;
   position: relative;
 }
-p.personal-data input[type="checkbox"] {
+p.personal-data input[type='checkbox'] {
   display: none;
 }
-p.personal-data input[type="checkbox"]:not(checked) + label:before {
-  content: "";
+p.personal-data input[type='checkbox']:not(checked) + label:before {
+  content: '';
   height: 21px;
   width: 21px;
   border: 1px solid #000;
@@ -1927,7 +2004,7 @@ p.personal-data input[type="checkbox"]:not(checked) + label:before {
   top: -3px;
   left: -29px;
 }
-p.personal-data input[type="checkbox"]:checked + label:before {
+p.personal-data input[type='checkbox']:checked + label:before {
   content: url(../images/checked.png);
   width: 21px;
   height: 21px;
@@ -2118,7 +2195,7 @@ p.personal-data input[type="checkbox"]:checked + label:before {
     width: 80%;
     margin: 0 auto 15px;
   }
-  #banner-form input[type="checkbox"] {
+  #banner-form input[type='checkbox'] {
     display: none;
   }
   #banner-form p.personal-data {
@@ -2195,12 +2272,6 @@ p.personal-data input[type="checkbox"]:checked + label:before {
     margin-right: 15px;
   }
 }
-@media only screen and (max-width: 991px){
-  .main-slider {
-    margin: 0 auto
-  }
-}
-
 @media only screen and (max-width: 479px) {
   .main-slider .slide .slide-text .offer-head,
   .main-slider .slide.type2 .slide-text .offer-head {
@@ -2231,7 +2302,7 @@ p.personal-data input[type="checkbox"]:checked + label:before {
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  #card_order .time input[type="radio"] + label {
+  #card_order .time input[type='radio'] + label {
     width: 40%;
   }
   footer .footer-top .left {
@@ -2285,8 +2356,8 @@ p.personal-data input[type="checkbox"]:checked + label:before {
   .popup .form-content h4 {
     width: 90vw;
   }
-  .popup .form-content input[type="text"],
-  .popup .form-content input[type="tel"] {
+  .popup .form-content input[type='text'],
+  .popup .form-content input[type='tel'] {
     width: 80vw;
   }
 }
