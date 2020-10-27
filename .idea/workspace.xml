@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a569ac2d-ba7d-460c-8b4a-cedf7cb26e01" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/OpenCallBackForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/OpenCallBackForm.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -265,12 +263,12 @@
       <updated>1603302795720</updated>
       <workItem from="1603302797503" duration="28159000" />
       <workItem from="1603449564256" duration="21427000" />
-      <workItem from="1603793176149" duration="14664000" />
+      <workItem from="1603793176149" duration="15854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126401000" />
+    <option name="totallyTimeSpent" value="127591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -287,7 +285,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49761525" visible="true" weight="0.25932506" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49761525" visible="true" weight="0.42451155" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5023847" side_tool="true" weight="0.3463588" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
