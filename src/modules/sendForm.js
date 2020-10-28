@@ -67,6 +67,8 @@ const sendForm = () => {
             if (!valid) {
                 const errorDiv = document.createElement('div');
                 errorDiv.textContent = 'Ошибка в этом поле';
+                errorDiv.style.cssText =
+                    'color: red; line-height: 0px; height: 15px; font-size: 15px;'
                 if (
                     elemWork.nextElementSibling &&
                     elemWork.nextElementSibling.textContent === 'Ошибка в этом поле'

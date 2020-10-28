@@ -27,14 +27,17 @@ const calc1 = () => {
       );
     },
     checkPromocode() {
-      if (promocodeInput.value === PROMO) {
+      if (promocodeInput&&promocodeInput.value === PROMO) {
         return true;
       }
     },
     setPrice(price) {
-      this.checkPromocode()
-          ? (priceTotal.textContent = Math.ceil(parseInt(price * promoSale)))
-          : (priceTotal.textContent = Math.ceil(parseInt(price)));
+      if (priceTotal){
+        this.checkPromocode()
+            ? (priceTotal.textContent = Math.ceil(parseInt(price * promoSale)))
+            : (priceTotal.textContent = Math.ceil(parseInt(price)));
+      }
+
     },
     init() {
       this.changeClub();
@@ -55,9 +58,13 @@ const calc1 = () => {
     });
   });
 
-  promocodeInput.addEventListener('input', () => {
-    calculator.setPrice(priceTotal.textContent);
-  });
+  if (promocodeInput){
+    promocodeInput.addEventListener('input', () => {
+      calculator.setPrice(priceTotal.textContent);
+    });
+  }
+
+
 };
 
 export default calc1;
