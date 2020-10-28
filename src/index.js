@@ -14,18 +14,18 @@ import sliderGallery from './modules/gallerySlider';
 if (
     window.location.pathname === '/index.html' ||
     window.location.pathname === '/'
-)
+);
 
 // maskPhone();
 openMenu();
 openFreeVisitForm();
 openCallBackForm();
 openGift();
-sendForm();
+// sendForm();
 burger();
 arrow();
 // openThanks();
 slider();
 sliderServices();
 sliderGallery();
-calc1();
+// calc1();
